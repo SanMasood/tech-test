@@ -1,0 +1,17 @@
+.Search{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.nasa-logo{
+    height: 20%;
+    width: 20%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.search-text{
+    width: 40%;
+    margin: 0 auto;
+}

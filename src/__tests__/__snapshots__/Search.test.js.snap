@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="Search"
+  >
+    <img
+      alt="NASA-logo"
+      class="nasa-logo"
+      src="https://lofrev.net/wp-content/photos/2014/09/Nasa-logo-3D.gif"
+    />
+    <input
+      class="search-text"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;
