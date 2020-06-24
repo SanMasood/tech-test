@@ -5,7 +5,8 @@ import App from '../components/App';
 describe ("App", () => {
   it("renders correctly", () => {
     const {asFragment} = render (
-      <App />
+      <App 
+      />
     )
     expect(asFragment()).toMatchSnapshot();
 

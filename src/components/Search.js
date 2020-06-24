@@ -1,14 +1,22 @@
 import React, {useState} from 'react';
 
 import '../styles/Search.css'
+import logoImage from '../assets/Nasa-logo-3D.gif'
 
 
 const Search = () => {
+    const [value, setValue] = useState('');
 return (
     
     <div className="Search">
-        <img src="https://lofrev.net/wp-content/photos/2014/09/Nasa-logo-3D.gif" className="nasa-logo" alt="NASA-logo"/>
-        <input className="search-text" type="text" />
+        <img src={logoImage} data-testid="logo-id" className="nasa-logo" alt="NASA-logo"/>
+
+        <form className="input-form">Enter query: 
+        <input className="search-text" type="text" onChange={(e)=>setValue(e.target.value)}/>
+
+        <button type="submit" className="search-button">Go!</button>
+
+        </form>
     </div>
 )
 }
