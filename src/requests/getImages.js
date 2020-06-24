@@ -18,6 +18,8 @@ const getImages = (query) => {
 
             const images = parsedImages.map(image => image.links[0].href);
             console.log (`Images: ${images}`);
+
+            return images;
         })
         .catch((err)=>{
             console.log(err)

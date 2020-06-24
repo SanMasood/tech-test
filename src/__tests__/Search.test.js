@@ -32,10 +32,9 @@ describe ("Search", () => {
     expect (screen.getByRole('button')).toBeInTheDocument();
     });
 
-    it ('type', () => {
+    it ('renders textbox to type in', () => {
         const {getByRole} = render(<input  />)          
         expect(screen.getByRole('textbox')).toBeInTheDocument();
-        //not testing functionality??
     })
 
 });
