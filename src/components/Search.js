@@ -17,9 +17,9 @@ const Search = () => {
 return (
     
     <div className="Search">
-        <img src={logoImage} data-testid="logo-id" className="nasa-logo" alt="NASA-logo"/>
+        <img src={logoImage} data-testid="logo-id" className="nasa-logo" alt="NASAlogo"/>
 
-        <form className="input-form" onSubmit={handleSubmit}>Enter query: 
+        <form className="input-form" onSubmit={handleSubmit}>Search: 
         <input className="search-text" type="text" onChange={(e)=>setValue(e.target.value)}/>
 
         <button type="submit" className="search-button">Go!</button>

@@ -6,14 +6,26 @@ exports[`Search renders correctly 1`] = `
     class="Search"
   >
     <img
-      alt="NASA-logo"
+      alt="NASAlogo"
       class="nasa-logo"
-      src="https://lofrev.net/wp-content/photos/2014/09/Nasa-logo-3D.gif"
+      data-testid="logo-id"
+      src="Nasa-logo-3D.gif"
     />
-    <input
-      class="search-text"
-      type="text"
-    />
+    <form
+      class="input-form"
+    >
+      Search:
+      <input
+        class="search-text"
+        type="text"
+      />
+      <button
+        class="search-button"
+        type="submit"
+      >
+        Go!
+      </button>
+    </form>
   </div>
 </DocumentFragment>
 `;

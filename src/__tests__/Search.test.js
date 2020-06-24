@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, screen } from '@testing-library/react';
 import Search from '../components/Search';
 import logoImage from '../assets/Nasa-logo-3D.gif'
 
@@ -7,28 +7,35 @@ import logoImage from '../assets/Nasa-logo-3D.gif'
 describe ("Search", () => {
     it("renders correctly", () => {
       const {asFragment} = render (
-        <Search 
-        img src={logoImage} 
-        
+        <Search         
         />
       )
       expect(asFragment()).toMatchSnapshot();  
-    })
+    });
 
-    xit('calls "onClick" prop on button click', () => {
-        // Render new instance in every test to prevent leaking state
-        const onChange = jest.fn();
-        const { getByLabelText } = render(<input onClick={onChange} />);
-      
-        fireEvent.click(getByLabelText(/Go/i));
-        expect(onChange).toHaveBeenCalled();
-      });
-
-      /*it('displays the correct logo', () => {
-        const { getByAltText } = render(<img src={logoImage}/>);
-        expect(getByAltText('logo-id')).toHaveAttribute('source', '../assets/Nasa-logo-3D.gif')
+    it("Has Search label", () => {
+        render(<Search />);
+        expect(screen.getByText(/Search/)).toBeInTheDocument();
+    });
 
 
-      })*/
+    it('displays the correct logo', () => {
+        const { getByAltText }= render(<img src={logoImage}   alt="NASAlogo"/>)
+          
+        expect(screen.getByAltText("NASAlogo")).toBeInTheDocument();
 
     });
+
+    it ("renders the button", () => {
+    const { getByRole } = render(<button />)
+
+    expect (screen.getByRole('button')).toBeInTheDocument();
+    });
+
+    it ('type', () => {
+        const {getByRole} = render(<input  />)          
+        expect(screen.getByRole('textbox')).toBeInTheDocument();
+        //not testing functionality??
+    })
+
+});
