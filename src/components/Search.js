@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 
+import getImages from '../requests/getImages';
 import '../styles/Search.css'
 import logoImage from '../assets/Nasa-logo-3D.gif'
+
 
 
 const Search = () => {
