@@ -1,17 +1,21 @@
 import React, {useState} from 'react';
+import PropTypes from 'prop-types';
 
+import  {setSearchResults}  from '../components/App';
 import getImages from '../requests/getImages';
 import '../styles/Search.css'
 import logoImage from '../assets/Nasa-logo-3D.gif'
+//import SearchResults from './SearchResults';
 
 
 
-const Search = () => {
+const Search = ({ setSearchResults }) => {
     const [value, setValue] = useState('');
 
     const handleSubmit= (event) => {
         event.preventDefault();
-        getImages(value);
+        setSearchResults(getImages(value));
+
     }
 
 return (
@@ -27,6 +31,9 @@ return (
         </form>
     </div>
 )
+}
+Search.propTypes = {
+    setSearchResults: PropTypes.func.isRequired,
 }
 
 export default Search;
