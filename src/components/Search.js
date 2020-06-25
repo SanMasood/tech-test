@@ -12,9 +12,9 @@ import logoImage from '../assets/Nasa-logo-3D.gif'
 const Search = ({ setSearchResults }) => {
     const [value, setValue] = useState('');
 
-    const handleSubmit= (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        setSearchResults(getImages(value));
+        setSearchResults(await getImages(value));
 
     }
 

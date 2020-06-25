@@ -7,13 +7,12 @@ import '../styles/App.css';
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
-  //console.log(SearchResults);
-
+  searchResults.map((e)=> console.log(e));
 
   return (
     <div className="App">
         <Search setSearchResults = { setSearchResults }/>
-        <SearchResults  />
+        <SearchResults />
        
     </div>
   );
