@@ -8,11 +8,13 @@ exports[`SearchResults renders correctly 1`] = `
     <form
       class="input-form"
     >
-      Search:
-      <input
-        class="search-text"
-        type="text"
-      />
+      <label>
+        Search:
+        <input
+          class="search-text"
+          type="text"
+        />
+      </label>
       <button
         class="search-button"
         type="submit"

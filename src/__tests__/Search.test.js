@@ -1,5 +1,6 @@
 import React from 'react';
-import { render, fireEvent, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import Search from '../components/Search';
 import logoImage from '../assets/Nasa-logo-3D.gif'
 
@@ -35,23 +36,20 @@ describe ("Search", () => {
     });
 
     it ('renders textbox to type in', () => {
-        const {getByRole} = render(<input  />)          
+        const {getByRole} = render(<input  />)       
+        screen.debug();   
         expect(screen.getByRole('textbox')).toBeInTheDocument();
     })
 
-    xit('should call prevent default', () => {
-        /*const mockPreventDefault = jest.fn();
-        let wrapper = 
-         
-        const mockEvent = {
-          preventDefault: mockPreventDefault
-        };
+    it('Handles button submit', () => {
+      const { getByLabelText, asFragment } = render(<Search />);
+      const searchQuery = screen.getByLabelText('Search:');
+      userEvent.type(searchQuery, 'moon');
 
-        wrapper.instance().handleSubmit(mockEvent);
-        expect(mockPreventDefault).toHaveBeenCalled();*/
-      
-    
-      //expect(event.preventDefault).toHaveBeenCalled();
+      const submitButton = screen.getByRole('button', { name: /Go/i });
+      userEvent.click(submitButton);
+
+      screen.debug();
     });
 
 

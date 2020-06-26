@@ -20,8 +20,10 @@ return (
       
     <div className="Search">      
 
-        <form className="input-form" onSubmit={handleSubmit}>Search: 
+        <form className="input-form" onSubmit={handleSubmit}>
+            <label>Search:
         <input className="search-text" type="text" onChange={(e)=>setValue(e.target.value)}/>
+        </label>
 
         <button type="submit" className="search-button">Go</button>
 
