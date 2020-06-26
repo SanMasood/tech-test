@@ -1,23 +1,21 @@
 import React, {useState} from 'react';
-import '../styles/SearchResults.css'
-import { fireEvent } from '@testing-library/react';
+import '../styles/SearchResults.css';
+import PropTypes from 'prop-types';
 
 const SearchResults = ( { image } ) => {
 return (
     <div className="SearchResults">
-          <figure className="images">
 
             <img src={image} 
-            alt="queryPhoto"
+            alt="mockAlt"
             className="card-photo"
-            />
-            
-            </figure>
-
-               
+            />        
     
     </div>
 )
+}
+SearchResults.propTypes = {
+    image: PropTypes.string.isRequired,
 }
 
 export default SearchResults;

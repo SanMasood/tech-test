@@ -1,15 +1,14 @@
 .Search{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
     justify-content: center;
-    /*margin-top: 1rem;
-    padding: 5px;*/
+    height: 20px;
 }
 
 
 .search-text{
-    width: 30%;
+    width: 50%;
     height: 20px;
     color: rgb(29, 3, 82);
     border-radius: 2px;
@@ -19,9 +18,9 @@
     padding: 0 10px;
     
 }
-.input-form{
-    display: flex;
-    flex-direction: row;
-    /*margin: auto;*/
-    justify-content: center;
+.search-button{
+    height: 22px;
+    border: 1px solid rgb(28, 28, 104);
+    border-radius: 2px;
 }
+

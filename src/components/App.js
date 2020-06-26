@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import Search from './Search';
 import SearchResults from './SearchResults';
+import logoImage from '../assets/Nasa-logo-3D.gif'
+
 import '../styles/App.css';
 import '../styles/Search.css'
 import '../styles/SearchResults.css'
@@ -13,6 +15,8 @@ function App() {
 
   return (
     <div className="App">
+       <img src={logoImage} data-testid="logo-id" className="nasa-logo" alt="NASAlogo"/>
+       
         <Search setSearchResults = { setSearchResults }/>
 
         <div className="search-results">
