@@ -5,12 +5,6 @@ exports[`SearchResults renders correctly 1`] = `
   <div
     class="Search"
   >
-    <img
-      alt="NASAlogo"
-      class="nasa-logo"
-      data-testid="logo-id"
-      src="Nasa-logo-3D.gif"
-    />
     <form
       class="input-form"
     >

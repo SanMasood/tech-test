@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 
 import getImages from '../requests/getImages';
 import '../styles/Search.css'
-//import SearchResults from './SearchResults';
-
-
 
 const Search = ({ setSearchResults }) => {
     const [value, setValue] = useState('');
@@ -20,9 +17,9 @@ const Search = ({ setSearchResults }) => {
     }
 
 return (
-    
+      
     <div className="Search">
-       
+      
 
         <form className="input-form" onSubmit={handleSubmit}>Search: 
         <input className="search-text" type="text" onChange={(e)=>setValue(e.target.value)}/>
@@ -30,9 +27,19 @@ return (
         <button type="submit" className="search-button">Go!</button>
 
         </form>
+        {
+        isLoading && 
+        <span className="loader"></span>   
+
+        }
+
+       
+        
     </div>
-)
+);
 }
+
+
 Search.propTypes = {
     setSearchResults: PropTypes.func.isRequired,
 }

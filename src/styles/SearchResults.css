@@ -1,18 +1,19 @@
 
 .SearchResults {
     display: inline-grid;
-    grid-column: repeat(3, 15%);
-    
-    grid-row: auto;
-    margin: 5px;
+    grid-column: repeat(3, 1fr);
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-top: 3rem;
+
 }
 
 .card-photo{
 
-    border-radius: 25px;
+    border-radius: 15px;
     width: 250px;
     height: 150px;
     object-fit: cover;
-    padding: 15px;
-   
-  }
+}
+
+/*media query => adjust margin left more*/

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Search from './Search';
 import SearchResults from './SearchResults';
-import logoImage from '../assets/Nasa-logo-3D.gif'
+import logoImage from '../assets/nasa-icon-png-7.png'
 
 import '../styles/App.css';
 import '../styles/Search.css'
@@ -11,6 +11,7 @@ import '../styles/SearchResults.css'
 function App() {
   const [searchResults, setSearchResults] = useState([]);
   searchResults.map((e)=> console.log(e));
+  
 
 
   return (
@@ -21,9 +22,10 @@ function App() {
 
         <div className="search-results">
           {
-           (searchResults && searchResults.length > 0) &&
-           searchResults.map(image => <SearchResults image = {image} /> )
-           
+                   
+           (searchResults && searchResults.length > 0)?
+           searchResults.map(image => <SearchResults image = {image} /> ):
+           <div><h2 className="results-text">No results yet.</h2></div>              
            
           }
         </div>
@@ -31,6 +33,7 @@ function App() {
     </div>
   );
 }
+
 
 
 export default App;
