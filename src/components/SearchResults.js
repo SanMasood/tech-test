@@ -1,19 +1,23 @@
 import React, {useState} from 'react';
-import getImages from '../requests/getImages';
-import searchResults from './App'
+import '../styles/SearchResults.css'
+import { fireEvent } from '@testing-library/react';
 
-
-const SearchResults = () => {
+const SearchResults = ( { image } ) => {
 return (
     <div className="SearchResults">
-        <p>
-        <img src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" 
-        alt="mockPhoto"
-        className="card-photo"/>
+          <figure className="images">
+
+            <img src={image} 
+            alt="queryPhoto"
+            className="card-photo"
+            />
             
-        </p>
+            </figure>
+
+               
+    
     </div>
 )
-
 }
+
 export default SearchResults;

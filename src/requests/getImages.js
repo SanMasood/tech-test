@@ -5,8 +5,10 @@ const getImages = (query) => {
         return Promise.resolve([]);
     }
     else{
+        const request = query.toLowerCase(); 
+
         return axios
-        .get(`https://images-api.nasa.gov/search?q=${query}`)
+        .get(`https://images-api.nasa.gov/search?q=`+request)
         .then((response)=>{
 
             let imageResults = response.data.collection.items;

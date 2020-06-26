@@ -1,0 +1,56 @@
+
+ 
+  
+  /* Ephxtra-wide grid-posts */
+  
+/*.search-results{
+    border: 2px solid orange;
+    margin: 5%;
+}
+.search-results:hover{
+    border: 1px solid blue;
+}*/
+.SearchResults {
+    display: inline-grid;
+    grid-column: repeat(3, 25%);
+    grid-row: auto;
+    margin: 25px;
+}
+
+.card-photo{
+
+    border-radius: 25px;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    padding: 15px;
+   
+  }
+ 
+  
+ /* 
+ .card-photo {
+   padding: 0 5px;
+    float: left;  
+    max-width: 30%;
+    max-height: 20%;
+    
+  }*/
+ 
+  /*.searchResults {
+    line-height: 0;
+   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px; 
+    
+  }
+  
+  .card-photo {    
+     width: 20% !important;
+  height: 30%;
+  }*/
+  

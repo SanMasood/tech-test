@@ -1,0 +1,25 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    max-width: 1530px;
+  }
+
+/*.nasa-logo{
+    height: 15%;
+    width: 22%;
+    padding-bottom: 1rem;
+    margin: auto;
+
+}*/
+.nasa-logo { 
+    margin: auto;
+    width: 300px;
+    max-height: 300px;
+  }
+@media only screen and (max-width: 500px){
+    .nasa-logo { 
+        width: 300px;
+      }
+  }

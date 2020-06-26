@@ -3,28 +3,25 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    margin-top: 1rem;
-    padding: 5px;
+    /*margin-top: 1rem;
+    padding: 5px;*/
 }
 
-.nasa-logo{
-    height: 15%;
-    width: 22%;
-    padding-bottom: 1rem;
-    margin: auto;
-}
 
 .search-text{
-    width: 40%;
+    width: 30%;
+    height: 20px;
     color: rgb(29, 3, 82);
     border-radius: 2px;
     border: 1px solid grey;
     background-color: rgb(236, 236, 236);   
     margin: 5px; 
+    padding: 0 10px;
     
 }
 .input-form{
     display: flex;
     flex-direction: row;
-    margin: auto;
+    /*margin: auto;*/
+    justify-content: center;
 }
