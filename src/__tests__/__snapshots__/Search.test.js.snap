@@ -17,7 +17,7 @@ exports[`Search renders correctly 1`] = `
         class="search-button"
         type="submit"
       >
-        Go!
+        Go
       </button>
     </form>
   </div>

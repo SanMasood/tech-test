@@ -2,8 +2,7 @@ import axios from 'axios';
 
 const getImages = (query) => {
     if (!query){
-        return Promise.resolve([]);
-            
+        return Promise.resolve([]);           
             
     }
     else{
@@ -25,8 +24,7 @@ const getImages = (query) => {
 
         })
         .catch((err)=>{
-            console.log(err);
-            
+            alert("Something went wrong. Please refresh your browser");           
         });        
     }
 }

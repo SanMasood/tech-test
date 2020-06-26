@@ -18,22 +18,18 @@ const Search = ({ setSearchResults }) => {
 
 return (
       
-    <div className="Search">
-      
+    <div className="Search">      
 
         <form className="input-form" onSubmit={handleSubmit}>Search: 
         <input className="search-text" type="text" onChange={(e)=>setValue(e.target.value)}/>
 
-        <button type="submit" className="search-button">Go!</button>
+        <button type="submit" className="search-button">Go</button>
 
         </form>
         {
         isLoading && 
-        <span className="loader"></span>   
-
-        }
-
-       
+        <span className="loader"></span>
+        }      
         
     </div>
 );
@@ -41,7 +37,7 @@ return (
 
 
 Search.propTypes = {
-    setSearchResults: PropTypes.func.isRequired,
+    setSearchResults: PropTypes.func,
 }
 
 export default Search;

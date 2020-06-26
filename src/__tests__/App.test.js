@@ -9,6 +9,6 @@ describe ("App", () => {
       />
     )
     screen.getByText("Search:");
-    //expect(asFragment()).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   })
 })

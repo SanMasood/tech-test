@@ -1,19 +1,20 @@
-
-
 .App {
     display: flex;
     flex-direction: column;
     align-content: center;
     margin: auto;
-    max-width: 1530px;
-    }
+   
+    height: 100%;
+    background: linear-gradient(rgb(231, 231, 253), rgb(243, 236, 236));
+}
 
-.nasa-logo { 
+.nasa-logo {
     margin: auto;
     padding: 5px;
     width: 200px;
     max-height: 250px;
-  }
-.results-text{
+}
+
+.results-text {
     text-align: center;
 }

@@ -10,7 +10,7 @@ import '../styles/SearchResults.css'
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
-  searchResults.map((e)=> console.log(e));
+  //searchResults.map((e)=> console.log(e));
   
 
 

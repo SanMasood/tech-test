@@ -3,10 +3,6 @@ import '../styles/SearchResults.css';
 import PropTypes from 'prop-types';
 
 const SearchResults = ( { image } ) => {
-    /*if (!image.length){
-        return 
-    }
-    else{*/
 
 return (
     
@@ -26,7 +22,7 @@ return (
     
 }
 SearchResults.propTypes = {
-    image: PropTypes.string.isRequired,
+    image: PropTypes.func.isRequired,
 }
 
 export default SearchResults;
