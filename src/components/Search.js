@@ -30,7 +30,7 @@ return (
         </form>
         {
         isLoading && 
-        <span className="loader"></span>
+        <span data-testid="loading-id" className="loader"></span>
         }      
         
     </div>

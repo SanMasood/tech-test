@@ -1,8 +1,7 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Search from '../components/Search';
-import logoImage from '../assets/Nasa-logo-3D.gif'
 
 
 describe ("Search", () => {
@@ -15,33 +14,9 @@ describe ("Search", () => {
       expect(asFragment()).toMatchSnapshot();  
     });
 
-    it("Has Search label", () => {
-        render(<Search />);
-        expect(screen.getByText(/Search/)).toBeInTheDocument();
-    });
-
-
-    it('displays the correct logo', () => {
-        const { getByAltText }= render(<img src={logoImage} alt="NASAlogo"/>)
-          
-        expect(screen.getByAltText("NASAlogo")).toBeInTheDocument();
-
-    });
-
-    it ("renders the button", () => {
-    const { getByRole } = render(<button />)
-
-    expect (screen.getByRole('button')).toBeInTheDocument();
-
-    });
-
-    it ('renders textbox to type in', () => {
-        const {getByRole} = render(<input  />)       
-        screen.debug();   
-        expect(screen.getByRole('textbox')).toBeInTheDocument();
-    })
 
     it('Handles button submit', () => {
+
       const { getByLabelText, asFragment } = render(<Search />);
       const searchQuery = screen.getByLabelText('Search:');
       userEvent.type(searchQuery, 'moon');
@@ -49,8 +24,23 @@ describe ("Search", () => {
       const submitButton = screen.getByRole('button', { name: /Go/i });
       userEvent.click(submitButton);
 
-      screen.debug();
     });
 
+  
+    it('calls "onClick" prop on button click', () => {
 
+      const onSubmit = jest.fn();
+      const { getByRole } = render(<button onClick={onSubmit}  />);
+    
+      fireEvent.click(getByRole('button'));
+      expect(onSubmit).toHaveBeenCalled();
+    });
+    
+    it("shows a loading spinner before results", () => {
+
+      const {getByTestId} = render(<span> </span>)
+    })
+
+
+    
 });
