@@ -34,6 +34,7 @@ describe ("Search", () => {
     
       fireEvent.click(getByRole('button'));
       expect(onSubmit).toHaveBeenCalled();
+      //test case for loader rendered?
     });   
      
 });

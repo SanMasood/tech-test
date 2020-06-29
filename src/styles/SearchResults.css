@@ -15,5 +15,11 @@
     height: 150px;
     object-fit: cover;
 }
-
-/*media query => adjust margin left more*/
+@media screen and (max-width: 608px){
+    .SearchResults{
+      
+       padding-left: 10%;
+       padding-right: 10%;     
+    
+    }
+}

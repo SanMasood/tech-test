@@ -39,7 +39,7 @@ return (
          color="red"
          height={60}
          width={60}
-         timeout={7000} //3 secs 
+         timeout={7000}
         />
         
         }      
