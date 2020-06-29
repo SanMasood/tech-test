@@ -19,7 +19,6 @@ const Search = ({ setSearchResults }) => {
         setSearchResults(await getImages(value));
         setIsLoading(false);
     }
-
 return (
       
     <div className="Search">      

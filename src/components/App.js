@@ -9,9 +9,8 @@ import '../styles/Search.css'
 import '../styles/SearchResults.css'
 
 function App() {
-  const [searchResults, setSearchResults] = useState([]);
-  //searchResults.map((e)=> console.log(e));
-  
+  const [searchResults, setSearchResults] = useState(null);
+  //searchResults.map((e)=> console.log(e));  
 
 
   return (
@@ -23,8 +22,9 @@ function App() {
         <div className="search-results">
           {
                    
-           (searchResults && searchResults.length > 0)?
-           searchResults.map(image => <SearchResults image = {image} /> ):
+           (searchResults)? 
+            <SearchResults searchResults = {searchResults} /> :
+           
            <div><h2 className="results-text">No results yet.</h2></div>              
            
           }
@@ -33,7 +33,5 @@ function App() {
     </div>
   );
 }
-
-
 
 export default App;

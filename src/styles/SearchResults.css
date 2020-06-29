@@ -1,5 +1,5 @@
 
-.SearchResults {
+.innerSearchResult {
     display: inline-grid;
     grid-column: repeat(3, 1fr);
     margin-left: 5%;
@@ -15,6 +15,12 @@
     height: 150px;
     object-fit: cover;
 }
+.caption{
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 608px){
     .SearchResults{
       
