@@ -10,7 +10,7 @@ return (
     <div className="SearchResults">
         <div className="test">
 
-            <img src={image} 
+            <img src={image} data-testid="image-id"
             alt="mockAlt"
             className="card-photo"
             />        

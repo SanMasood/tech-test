@@ -3,25 +3,33 @@
 exports[`SearchResults renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="Search"
+    class="SearchResults"
   >
-    <form
-      class="input-form"
+    <div
+      class="test"
     >
-      <label>
-        Search:
-        <input
-          class="search-text"
-          type="text"
-        />
-      </label>
-      <button
-        class="search-button"
-        type="submit"
-      >
-        Go
-      </button>
-    </form>
+      <img
+        alt="mockAlt"
+        class="card-photo"
+        data-testid="image-id"
+      />
+    </div>
   </div>
 </DocumentFragment>
+`;
+
+exports[`SearchResults returns thumbnail images of search query 1`] = `
+<div
+  className="SearchResults"
+>
+  <div
+    className="test"
+  >
+    <img
+      alt="mockAlt"
+      className="card-photo"
+      data-testid="image-id"
+    />
+  </div>
+</div>
 `;

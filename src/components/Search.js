@@ -2,7 +2,11 @@ import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 import getImages from '../requests/getImages';
+import Loader from 'react-loader-spinner'
+
 import '../styles/Search.css'
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
+
 
 const Search = ({ setSearchResults }) => {
     const [value, setValue] = useState('');
@@ -30,7 +34,14 @@ return (
         </form>
         {
         isLoading && 
-        <span data-testid="loading-id" className="loader"></span>
+        <Loader
+         type="ThreeDots"
+         color="red"
+         height={60}
+         width={60}
+         timeout={7000} //3 secs 
+        />
+        
         }      
         
     </div>

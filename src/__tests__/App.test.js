@@ -39,7 +39,7 @@ describe ("App", () => {
 
     it ('renders textbox to type in', () => {
         const {getByRole} = render(<input  />)       
-        screen.debug();   
+        //screen.debug();   
         expect(screen.getByRole('textbox')).toBeInTheDocument();
     })
 })

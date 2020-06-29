@@ -34,13 +34,6 @@ describe ("Search", () => {
     
       fireEvent.click(getByRole('button'));
       expect(onSubmit).toHaveBeenCalled();
-    });
-    
-    it("shows a loading spinner before results", () => {
-
-      const {getByTestId} = render(<span> </span>)
-    })
-
-
-    
+    });   
+     
 });

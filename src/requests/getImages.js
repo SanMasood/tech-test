@@ -14,11 +14,15 @@ const getImages = (query) => {
             
 
             let imageResults = response.data.collection.items;
+            //console.log(imageResults[0].data[0].title);//title isolated
+            console.log (imageResults[1].data[0]);
 
             let parsedImages = imageResults.filter((images)=> images.data[0].media_type==="image");
+            console.log(parsedImages)
 
             const images = parsedImages.map(image => image.links[0].href);
             //console.log (`Images: ${images}`); 
+
              return images;   
            
 
