@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/tech-test/static/css/main.4f75b264.chunk.css",
+    "main.js": "/tech-test/static/js/main.9e5abc2d.chunk.js",
+    "main.js.map": "/tech-test/static/js/main.9e5abc2d.chunk.js.map",
+    "runtime-main.js": "/tech-test/static/js/runtime-main.a73da4ab.js",
+    "runtime-main.js.map": "/tech-test/static/js/runtime-main.a73da4ab.js.map",
+    "static/css/2.f87e9f44.chunk.css": "/tech-test/static/css/2.f87e9f44.chunk.css",
+    "static/js/2.a99f6e44.chunk.js": "/tech-test/static/js/2.a99f6e44.chunk.js",
+    "static/js/2.a99f6e44.chunk.js.map": "/tech-test/static/js/2.a99f6e44.chunk.js.map",
+    "index.html": "/tech-test/index.html",
+    "precache-manifest.5e2a5f3529a88202de16fe1f9d785ed7.js": "/tech-test/precache-manifest.5e2a5f3529a88202de16fe1f9d785ed7.js",
+    "service-worker.js": "/tech-test/service-worker.js",
+    "static/css/2.f87e9f44.chunk.css.map": "/tech-test/static/css/2.f87e9f44.chunk.css.map",
+    "static/css/main.4f75b264.chunk.css.map": "/tech-test/static/css/main.4f75b264.chunk.css.map",
+    "static/js/2.a99f6e44.chunk.js.LICENSE.txt": "/tech-test/static/js/2.a99f6e44.chunk.js.LICENSE.txt",
+    "static/media/nasa-icon-png-7.png": "/tech-test/static/media/nasa-icon-png-7.c51d00ea.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a73da4ab.js",
+    "static/css/2.f87e9f44.chunk.css",
+    "static/js/2.a99f6e44.chunk.js",
+    "static/css/main.4f75b264.chunk.css",
+    "static/js/main.9e5abc2d.chunk.js"
+  ]
+}
