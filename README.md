@@ -17,7 +17,7 @@ You can make an edits in the console. If not, then simply type:
 
 to start running the clone locally. This will run the app on your browser. 
 Type in your space-related query to receive results like so:
-![NASA-app-start]()
+![NASA-app-start](https://github.com/SanMasood/tech-test/blob/master/public/Screenshot%20from%202020-06-30%2017-33-40.png)
 
 
 
