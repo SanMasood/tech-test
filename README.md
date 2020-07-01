@@ -1,23 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# NASA TECH TEST APP
 
-## Available Scripts
+This clever app takes you to a virtual space tour. 
+Built in React, it has been tested usign Jest & React Testing Library. Axios and PropTypes used as packages.
+You can search for any space related image simply by entering a query into the search bar.
 
-In the project directory, you can run:
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Assuming you have updated versions of Node & VSCode, open a new terminal and create a clone of this repository like so:
+`git clone git@github.com:SanMasood/tech-test.git`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## How to Use
 
-### `npm test`
+You can make an edits in the console. If not, then simply type:
+`npm start`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+to start running the clone locally. This will run the app on your browser. 
+Type in your space-related query to receive results like so:
+![NASA-app-start]()
 
-### `npm run build`
+
+
+
+`npm run build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -66,3 +71,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Credits
+Thank you Ian King & Manchester Codes.
+
+
