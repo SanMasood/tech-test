@@ -25,7 +25,7 @@ function App() {
            (searchResults)? 
             <SearchResults searchResults = {searchResults} /> :
            
-           <div><h2 className="results-text">No results yet.</h2></div>              
+           <div><h2 className="results-text">No results... yet.</h2></div>              
            
           }
         </div>
